@@ -2,6 +2,7 @@
 
 let fullName = document.querySelector('.input--name');
 let sum = 0;
+let kaballahNumber = 0;
 
 const btnCalculate = document.querySelector('.submit--name');
 btnCalculate.addEventListener('click', function () {
@@ -9,9 +10,14 @@ btnCalculate.addEventListener('click', function () {
   fullName = fullName.replace(/\s+/g, '').toLowerCase();
   // fullName = fullName.;
   // console.log(fullName);
+  // debugger;
   letterToNumber(fullName);
   console.log(sum);
-  reduceDigits(sum);
+  sum = reduceDigits(sum);
+  console.log(sum);
+
+  // Redirect to number meaning page
+  window.location.href = `../pages/message-${sum}.html`;
 });
 
 const letterToNumber = function (name) {
@@ -83,5 +89,5 @@ const reduceDigits = function (sum) {
       .split('')
       .reduce((acc, digit) => acc + Number(digit), 0);
   }
-  console.log(`Final sum: ${sum}`);
+  return sum;
 };

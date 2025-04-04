@@ -1,0 +1,14 @@
+body {
+  padding: 40px;
+}
+
+.message-title {
+  color: white;
+  text-align: center;
+}
+
+.message-explanation {
+  color: gainsboro;
+  text-align: center;
+  font-size: 1.3em;
+}
