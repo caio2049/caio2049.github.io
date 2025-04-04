@@ -28,18 +28,22 @@ form {
 }
 
 .page-title {
-  margin-bottom: 30px;
+  margin-bottom: 1.5em;
 }
 
 .input--name {
   display: block;
   padding: 5px 10px;
   font-size: 1.25em;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 1em;
+  /* border-radius: 0px; */
+  outline: 0;
 }
 
-.input--name {
-  width: 100%;
-  margin-bottom: 20px;
+.input--name:focus {
+  outline: 0;
 }
 
 .form--container {
@@ -52,6 +56,8 @@ form {
 .submit--name {
   text-align: center;
   border: 1px solid red;
-  padding: 15px 30px;
+  padding: 10px 20px;
   align-self: center;
+  font-size: 1.15em;
+  border-radius: 5px;
 }
